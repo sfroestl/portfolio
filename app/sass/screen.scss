@@ -31,7 +31,7 @@ body {
 ///////////////////////////////////////
 
 header {
-  padding: 4% 0 ;
+  padding: 6%;
   text-align: center;
   nav {
     a {
@@ -156,6 +156,9 @@ section {
   }
   &.imprint, &.disclaimer, &.infoWidget {
     font-size:.9em;
+  }
+  &.infoWidget {
+    margin-bottom:10em;
   }
 }
 .contact-buttons {
