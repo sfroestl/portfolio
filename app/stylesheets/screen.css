@@ -93,7 +93,7 @@ body {
 /************ Header ****************/
 /* line 33, ../sass/screen.scss */
 header {
-  padding: 6%;
+  padding: 4% 0;
   text-align: center;
 }
 /* line 37, ../sass/screen.scss */
@@ -175,31 +175,31 @@ h1 {
   color: #ded3c6;
   font-size: 4.2em;
   font-weight: 800;
-  line-height: 1;
   text-align: center;
-  margin: 0.5em 0;
+  margin: 0 0 0.5em 0;
   text-shadow: 0 -1px 1px #FFFFFF, 0 1px 1px #666666;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 p.claim {
   text-align: center;
   margin-bottom: 4em;
 }
-/* line 115, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 p.claim:after {
   background-color: #cdc5c0;
   content: "";
   display: block;
   height: 1px;
+  width: 100%;
+  margin: 0 auto;
   margin: 2em auto 0 auto;
-  width: 10em;
 }
-/* line 122, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 p.welcome {
   text-align: center;
 }
-/* line 127, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 p.teaser {
   font-family: "Baskerville", serif;
   font-size: 24px;
@@ -209,7 +209,7 @@ p.teaser {
   margin-bottom: 35px;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 section h2 {
   font-family: "Baskerville", serif;
   font-size: 38px;
@@ -217,20 +217,20 @@ section h2 {
   line-height: 1;
   text-align: center;
 }
-/* line 145, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 section h2 a {
   border: none;
 }
-/* line 150, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 section.contact-me h2 {
   margin-bottom: 1em;
 }
-/* line 154, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 section.imprint, section.disclaimer, section.infoWidget {
   font-size: .9em;
 }
 
-/* line 158, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .contact-buttons {
   width: 252px;
   height: 64px;
@@ -239,34 +239,35 @@ section.imprint, section.disclaimer, section.infoWidget {
   margin-bottom: 3em;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 article {
   margin-bottom: 4em;
 }
-/* line 167, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 article:after {
   background-color: #cdc5c0;
   content: "";
   display: block;
   height: 1px;
-  margin: 2em auto 0 auto;
-  width: 6em;
+  width: 12em;
+  margin: 0 auto;
+  margin: 1em auto 0 auto;
 }
 
-/* line 175, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 p.coworkers span:before {
   content: ", ";
 }
-/* line 178, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 p.coworkers span:first-child:before {
   content: "";
 }
-/* line 183, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 p.project-desc {
   padding-bottom: 1em;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 img {
   display: block;
   margin: 0 auto;
@@ -274,8 +275,12 @@ img {
   margin-bottom: 35px;
   border: 0.4em solid white;
 }
+/* line 198, ../sass/screen.scss */
+img.about {
+  width: 320px;
+}
 
-/* line 199, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -284,7 +289,7 @@ img {
   /* 2 */
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
@@ -293,13 +298,13 @@ img {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 212, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .clearfix {
   *zoom: 1;
 }
 
 /************ Footer ****************/
-/* line 222, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 footer {
   font-size: 0.8em;
   border-top: 0.6em solid gray;

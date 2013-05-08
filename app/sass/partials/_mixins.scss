@@ -7,12 +7,17 @@
   transition: all 0.25s ease;
 }
 
-@mixin lineBottom($width, $color){
+@mixin line($width, $color){
   background-color: $color;
   content: "";
   display: block;
   height: 1px;
-  margin: 2em auto 0 auto;
   width: $width;
+  margin: 0 auto;
+}
+
+@mixin lineWithMargin($width, $color, $top, $bottom) {
+  @include line($width, $color);
+  margin: $top auto $bottom auto;
 }
 
