@@ -1,0 +1,10 @@
+<h2>{{project.title}}</h2>
+<p class="teaser">{{project.teaser}}</p>
+<img ng-src="{{project.image.url}}" class="{{project.image.orientation}}"/>
+<p class="project-desc">{{project.infoText}}</p>
+
+<p ng-show="project.collaborators" class="coworkers">Collaborators:
+  <span ng-repeat="collab in project.collaborators"><a ng-href="{{collab.link}}" target="_blank">{{collab.name}}</a></span>
+</p>
+<p ng-show="project.created">Created: {{project.created}}</p>
+<a ng-href="{{project.url}}" target="_blank">Visit &rarr;</a>

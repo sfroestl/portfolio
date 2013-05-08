@@ -1,0 +1,470 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../.rvm/gems/ruby-1.9.3-p194/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/**************** Colors ****************/
+/**************** Fonts ****************/
+/* line 12, ../sass/screen.scss */
+::selection {
+  background: #dfc7af;
+  color: white;
+}
+
+/* line 16, ../sass/screen.scss */
+::-moz-selection {
+  background: #dfc7af;
+  color: white;
+}
+
+/* line 21, ../sass/screen.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #faf7f5;
+  color: #505050;
+  width: 100%;
+  height: 100%;
+}
+
+/************ Header ****************/
+/* line 33, ../sass/screen.scss */
+header {
+  padding: 6%;
+  text-align: center;
+}
+/* line 37, ../sass/screen.scss */
+header nav a {
+  position: relative;
+  border-bottom: 1px solid transparent;
+  color: #878787;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 2em;
+  font-weight: 300;
+  vertical-align: middle;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+/* line 49, ../sass/screen.scss */
+header nav a:hover {
+  color: #ded3c6;
+  border-bottom: 1px solid #ded3c6;
+}
+/* line 54, ../sass/screen.scss */
+header nav a#brand {
+  background: transparent url("../images/logo.svg") no-repeat left top;
+  border: none;
+  display: inline-block;
+  height: 3.8em;
+  width: 3.8em;
+  margin: 0 1.4em;
+  background-size: cover;
+}
+
+/************ Content ****************/
+/* line 70, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #505050;
+  border-bottom: 1px solid #cdc5c0;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+/* line 75, ../sass/screen.scss */
+a:hover {
+  color: #ded3c6;
+  border-bottom: 1px solid #ded3c6;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+/* line 83, ../sass/screen.scss */
+b {
+  font-family: "Baskerville", serif;
+  font-weight: 600;
+}
+
+/* line 87, ../sass/screen.scss */
+#content {
+  overflow: hidden;
+  padding: 0 5%;
+  margin: 0 auto;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #505050;
+}
+
+/* line 99, ../sass/screen.scss */
+h1 {
+  font-family: "Baskerville", serif;
+  color: #ded3c6;
+  font-size: 4.2em;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  margin: 0.5em 0;
+  text-shadow: 0 -1px 1px #FFFFFF, 0 1px 1px #666666;
+}
+
+/* line 114, ../sass/screen.scss */
+p.claim {
+  text-align: center;
+  margin-bottom: 4em;
+}
+/* line 115, ../sass/screen.scss */
+p.claim:after {
+  background-color: #cdc5c0;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 2em auto 0 auto;
+  width: 10em;
+}
+/* line 122, ../sass/screen.scss */
+p.welcome {
+  text-align: center;
+}
+/* line 127, ../sass/screen.scss */
+p.teaser {
+  font-family: "Baskerville", serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 35px;
+}
+
+/* line 138, ../sass/screen.scss */
+section h2 {
+  font-family: "Baskerville", serif;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 1;
+  text-align: center;
+}
+/* line 145, ../sass/screen.scss */
+section h2 a {
+  border: none;
+}
+/* line 150, ../sass/screen.scss */
+section.contact-me h2 {
+  margin-bottom: 1em;
+}
+/* line 154, ../sass/screen.scss */
+section.imprint, section.disclaimer, section.infoWidget {
+  font-size: .9em;
+}
+
+/* line 158, ../sass/screen.scss */
+.contact-buttons {
+  width: 252px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+}
+
+/* line 165, ../sass/screen.scss */
+article {
+  margin-bottom: 4em;
+}
+/* line 167, ../sass/screen.scss */
+article:after {
+  background-color: #cdc5c0;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 2em auto 0 auto;
+  width: 6em;
+}
+
+/* line 175, ../sass/screen.scss */
+p.coworkers span:before {
+  content: ", ";
+}
+/* line 178, ../sass/screen.scss */
+p.coworkers span:first-child:before {
+  content: "";
+}
+/* line 183, ../sass/screen.scss */
+p.project-desc {
+  padding-bottom: 1em;
+}
+
+/* line 189, ../sass/screen.scss */
+img {
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+  margin-bottom: 35px;
+  border: 0.4em solid white;
+}
+
+/* line 199, ../sass/screen.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 204, ../sass/screen.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 212, ../sass/screen.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/************ Footer ****************/
+/* line 222, ../sass/screen.scss */
+footer {
+  font-size: 0.8em;
+  border-top: 0.6em solid gray;
+  margin-top: 5%;
+  padding: 10%;
+  color: white;
+  text-align: center;
+  background-color: #505050;
+}
+
+/* Large desktop */
+/* Portrait tablet to landscape and desktop */
+@media screen and (min-width: 768px) {
+  /* line 8, ../sass/partials/_media_queries.scss */
+  img {
+    width: 480px;
+    height: auto;
+  }
+  /* line 11, ../sass/partials/_media_queries.scss */
+  img.vertical {
+    height: 480px;
+    width: auto;
+  }
+
+  /* line 16, ../sass/partials/_media_queries.scss */
+  .grid-left {
+    float: left;
+    width: 44%;
+  }
+
+  /* line 20, ../sass/partials/_media_queries.scss */
+  .grid-right {
+    width: 54%;
+    float: right;
+  }
+
+  /* line 24, ../sass/partials/_media_queries.scss */
+  #content {
+    max-width: 800px;
+  }
+
+  /* line 27, ../sass/partials/_media_queries.scss */
+  footer {
+    border: none;
+    margin-top: 5%;
+    padding: 5%;
+    color: #505050;
+    text-align: center;
+    background-color: #faf7f5;
+  }
+}
+/* Landscape phones and down */
+@media screen and (max-width: 767px) {
+  /* line 40, ../sass/partials/_media_queries.scss */
+  img {
+    width: 260px;
+  }
+
+  /* line 44, ../sass/partials/_media_queries.scss */
+  footer a {
+    color: white;
+  }
+
+  /* line 48, ../sass/partials/_media_queries.scss */
+  #content {
+    min-height: 280px;
+  }
+}
+/************ Animation ****************/
+/* entire container, keeps perspective */
+/* line 6, ../sass/partials/_flipper.scss */
+.flip-container {
+  margin: 0 10px;
+  float: left;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+}
+
+/* flip the pane when hovered */
+/* line 15, ../sass/partials/_flipper.scss */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/* line 22, ../sass/partials/_flipper.scss */
+.flip-container, .front, .back {
+  width: 64px;
+  height: 64px;
+}
+
+/* flip speed goes here */
+/* line 28, ../sass/partials/_flipper.scss */
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transition: 0.6s;
+  -moz-transform-style: preserve-3d;
+  -o-transition: 0.6s;
+  -o-transform-style: preserve-3d;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+/* line 41, ../sass/partials/_flipper.scss */
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+/* line 52, ../sass/partials/_flipper.scss */
+.front {
+  z-index: 2;
+}
+/* line 53, ../sass/partials/_flipper.scss */
+.front a {
+  border: none;
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+  background: transparent url("../images/contact-icons.png") no-repeat left top;
+  background-size: 64px auto;
+}
+/* line 62, ../sass/partials/_flipper.scss */
+.front a.github {
+  background-position: left -64px;
+}
+/* line 65, ../sass/partials/_flipper.scss */
+.front a.mail {
+  background-position: left -128px;
+}
+
+/* back, initially hidden pane */
+/* line 73, ../sass/partials/_flipper.scss */
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/* line 78, ../sass/partials/_flipper.scss */
+.back a {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  display: inline-block;
+  line-height: 3.7em;
+  font-weight: 300;
+  height: 64px;
+  margin: 0 5px;
+  width: 64px;
+  background: transparent url("../images/contact-icons-back.png") no-repeat left top;
+  background-size: 64px auto;
+}

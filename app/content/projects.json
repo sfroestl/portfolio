@@ -1,0 +1,44 @@
+{
+  "claim":"This is a choice of recent projects I created for customers, at the university or as spare time projects.",
+  "projects": [
+    { "title":"Time Chicken" ,
+      "teaser":"easy task and time recording.",
+      "infoText":"The iOS app 'Time Chicken' was developped during the lecture of 'mobile and ubiquiitioius computing'. It let's you manage your tasks and record the time you spend working on them. As an additional feature you can import tasks from web-based collaboration tools like Jira and One Spark. I'm now working on it to ship it to the app store.",
+      "url":"https://github.com/sfroestl/timechicken2",
+      "image":{"url":"images/content/timechicken.png", "orientation":"vertical"},
+      "created":"2012",
+      "collaborators":[{"name":"Christian Schäfer", "link":"https://twitter.com/aphexz"}]
+    },
+    { "title":"One Spark" ,
+      "teaser":"collaboration software with cloud tool integration.",
+      "infoText":"I started working on One Spark together with my brother Joachim. He did Interface Design and user experience conceptual work. For my bachelors thesis I developed a protype and we did lot's of user testing. Now we plan to revise the protoype and launch a ready plattform.",
+      "url":"http://www.onespark.de",
+      "image":{"url":"images/content/onespark.png", "orientation":"horizontal"},
+      "created":"2011 & 2012",
+      "collaborators":[{"name":"Joachim Fröstl", "link":"https://twitter.com/JoggaF"}]
+    },
+    { "title":"Wunschwälder",
+      "teaser":"social contest web-app with facebook integration.",
+      "infoText":"At wunschwälder you can plant your wish tree, share it on Facebook and pour yours and other trees. The trees grow and you can win many prizes. This interactive website was created for a customer",
+      "url":"http://www.wunschwaelder.de",
+      "image":{"url":"images/content/wunsch.png", "orientation":"horizontal"},
+      "created":"2012",
+      "collaborators":[{"name":"Daniel Breining", "link":"http://www.danielbreining.de"}]
+    },
+    { "title":"Nerdbande",
+      "teaser":"dresdens regulars' table for designer and developer.",
+      "infoText":"Nerdbande is a group of designers and developers located in dresden. I initiated this community to exchange knowledge and discuss everything around internet & technology. And of course to have a great time with my fellows.",
+      "url":"http://www.nerdban.de",
+      "image":{"url":"images/content/nerdbande.png", "orientation":"horizontal"},
+      "created":"2012"
+    }
+    ,
+    { "title":"Boxxi",
+      "teaser":"cloud file storage system.",
+      "infoText":"Boxxi is a cloud based file storage system. It was developed by 12 students at the Chair of Multimedia Technology. I was project leader of the team wich developed the android tablet client.",
+      "url":"http://www.mmt.inf.tu-dresden.de/Lehre/index_en.xhtml",
+      "image":{"url":"images/content/boxxi.png", "orientation":"horizontal"},
+      "created":"2011"
+    }
+  ]
+}

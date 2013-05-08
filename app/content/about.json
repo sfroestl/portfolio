@@ -1,0 +1,10 @@
+{
+  "claim":"I love technology and believe in the capabilities of the internet. I want to create simple products, that give people fun using them. There is a high potential in having less features and distraction in your application. This allows you to focus on the essence, on what defines the product.",
+  "about":{
+    "profile_image":{"url":"images/content/profile.jpg", "orientation":"vertical"},
+    "twitter": {"url":"https://twitter.com/sfroestl"},
+    "github":{"url":"https://github.com/sfroestl"},
+    "email":{"login":"sebastian", "domain":"froestl.biz"},
+    "contact_text":"feel free to get in touch with me."
+  }
+}

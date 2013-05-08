@@ -1,0 +1,48 @@
+<h1>About</h1>
+<section class="grid-left">
+  <p class="claim">{{claim}}</p>
+</section>
+<section class="grid-right">
+  <img ng-src="{{about.profile_image.url}}" class="{{about.profile_image.orientation}}">
+</section>
+
+
+<section class="grid-left contact-me clearfix">
+  <h2>Contact me</h2>
+  <p class="teaser">{{about.contact_text}}</p>
+  <div class="contact-buttons">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <a ng-href="{{about.twitter.url}}" target="_blank" class="twitter"></a>
+        </div>
+        <div class="back">
+          <a ng-href="{{about.twitter.url}}" target="_blank" class="twitter">twitter</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <a ng-href="{{about.github.url}}" target="_blank" class="github"></a>
+        </div>
+        <div class="back">
+          <a ng-href="{{about.github.url}}" target="_blank" class="github">github</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <a ng-href="{{mail2}}:{{about.email.login}}@{{about.email.domain}}" class="mail"></a>
+        </div>
+        <div class="back">
+          <a ng-href="{{mail2}}:{{about.email.login}}@{{about.email.domain}}" class="mail">mail</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

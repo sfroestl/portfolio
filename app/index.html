@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" ng-app="portfolio">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sebastian Fröstl</title>
+  <link rel="stylesheet" href="stylesheets/screen.css"/>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'> -->
+
+  <!-- <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'> -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body id="page">
+    <header>
+      <nav>
+        <a href="#/projects">Projects</a>
+        <a href="#/" id="brand"></a>
+        <a href="#/about">About</a>
+      </nav>
+    </header>
+
+    <div ng-view id="content"></div>
+
+    <footer>Copyright © Sebastian Fröstl 2013 | <a href="#/imprint">Imprint</a></footer>
+  <!-- In production: -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+
+  <!-- <script src="lib/angular/angular.js"></script> -->
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  <script src="lib/angular/angular-resource.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<h1>Imprint</h1>
+<section class="imprint">
+  <p class="claim">Verantwortlich für den Inhalt gemäß § 5 TMG: <br>
+  Sebastian Fröstl<br>
+  {{imprint.address.street}}<br>
+  {{imprint.address.zip}} {{imprint.address.city}}<br>
+
+  {{imprint.contact.phone}}<br>
+  {{imprint.contact.mail}}<br>
+</section>
+
+<section class="disclaimer">
+  <h2>{{imprint.headline}}</h2><br>
+  <article ng-repeat="content in imprint.content" class="projects">
+    <b>{{content.headline}}</b>
+    <p>{{content.text}}</p>
+  </article>
+</section>

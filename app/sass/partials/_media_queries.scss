@@ -1,0 +1,60 @@
+/* Large desktop */
+@media (min-width: 980px) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media screen and (min-width: 768px) {
+  img {
+    width:480px;
+    height:auto;
+    &.vertical {
+      height:480px;
+      width:auto;
+    }
+  }
+  .grid-left {
+    float:left;
+    width:44%;
+  }
+  .grid-right {
+    width:54%;
+    float:right;
+  }
+  #content {
+    max-width:800px;
+  }
+  footer {
+    border:none;
+    margin-top:5%;
+    padding: 5%;
+    color:$textColor;
+    text-align:center;
+    background-color:$background;
+
+  }
+}
+
+/* Landscape phones and down */
+@media screen and (max-width: 767px) {
+  img {
+    width:260px;
+  }
+  footer {
+    a {
+      color:white;
+    }
+  }
+  #content {
+    min-height:280px;
+  }
+
+  // section {
+  //   &.left, &.right {
+  //     margin-bottom: 4em;
+  //     &:after {
+  //       @include lineBottom(6em, $lineColor);
+  //     }
+  //   }
+  // }
+}

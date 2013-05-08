@@ -1,0 +1,237 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "partials/_grid";
+@import "partials/_variables";
+@import "partials/_mixins";
+
+
+::selection {
+  background: $selectionBack;
+  color: $selection;
+}
+::-moz-selection {
+    background: $selectionBack;
+    color: $selection;
+}
+
+body {
+  font-family:$textFont;
+  background-color:$background;
+  color: $textColor;
+  width:100%;
+  height:100%;
+}
+
+///////////////////////////////////////
+/************ Header ****************/
+///////////////////////////////////////
+
+header {
+  padding: 6%;
+  text-align: center;
+  nav {
+    a {
+      position: relative;
+      border-bottom: 1px solid transparent;
+      color: $navTextGray;
+      text-transform: uppercase;
+      display: inline-block;
+      line-height: 2em;
+      font-weight: 300;
+      vertical-align: middle;
+      @include slowAnimation;
+      text-decoration:none;
+
+      &:hover{
+        color:$navTextHover;
+        border-bottom: 1px solid $navTextHover;
+      }
+
+      &#brand {
+        background: transparent url('../images/logo.svg') no-repeat left top;
+        border: none;
+        display: inline-block;
+        height: 3.8em;
+        width: 3.8em;
+        margin: 0 1.4em;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////
+/************ Content ****************/
+///////////////////////////////////////
+a {
+  text-decoration:none;
+  color: $textColor;
+  border-bottom: 1px solid $lineColor;
+  @include slowAnimation;
+   &:hover{
+      color:$navTextHover;
+      border-bottom: 1px solid $navTextHover;
+      @include slowAnimation;
+    }
+}
+
+
+b {
+  font-family: $headlineFont;
+  font-weight:600;
+}
+#content {
+  overflow:hidden;
+  padding: 0 5%;
+  margin: 0 auto;
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.75;
+  color: $textColor;
+
+}
+
+
+h1 {
+  font-family: $headlineFont;
+  color: $headlineColor;
+  font-size: 4.2em;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  margin: 0.5em 0;
+  // background: none repeat scroll 0 0 #CCCCCC;
+    // color: #DBDBDB;
+    text-shadow: 0 -1px 1px #FFFFFF, 0 1px 1px #666666;
+}
+
+p {
+  // Papge Claim
+  &.claim {
+    &:after{
+      @include lineBottom(10em, $lineColor);
+    }
+    text-align:center;
+    margin-bottom: 4em;
+  }
+
+  &.welcome {
+    text-align:center;
+    // margin-bottom: 50%;
+  }
+  // Project subline teaser
+  &.teaser {
+    font-family: $headlineFont;
+    font-size: 24px;
+    font-weight: 300;
+    text-align:center;
+    font-style:italic;
+    margin-bottom: 35px;
+  }
+}
+
+section {
+  h2{
+    font-family: $headlineFont;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+
+    a {
+      border:none;
+    }
+  }
+  &.contact-me {
+    h2 {
+      margin-bottom: 1em;
+    }
+  }
+  &.imprint, &.disclaimer, &.infoWidget {
+    font-size:.9em;
+  }
+}
+.contact-buttons {
+  width:252px;
+  height:64px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:3em;
+}
+article {
+  margin-bottom: 4em;
+  &:after {
+    @include lineBottom(6em, $lineColor);
+  }
+}
+
+p {
+  &.coworkers {
+    span {
+      &:before{
+        content:", ";
+      }
+      &:first-child:before {
+        content:"";
+      }
+    }
+  }
+  &.project-desc {
+    padding-bottom:1em;
+  }
+}
+
+
+img {
+  display: block;
+  margin: 0 auto;
+  width:85%;
+  margin-bottom:35px;
+  border:0.4em solid white;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+
+///////////////////////////////////////
+/************ Footer ****************/
+///////////////////////////////////////
+footer {
+  font-size:0.8em;
+  border-top:0.6em solid gray;
+  margin-top:5%;
+  padding: 10%;
+  color:white;
+  text-align:center;
+  background-color:$textColor;
+}
+
+
+
+@import "partials/_media_queries";
+@import "partials/_flipper"
+
+
