@@ -6,5 +6,6 @@
 <p ng-show="project.collaborators" class="coworkers">Collaborators:
   <span ng-repeat="collab in project.collaborators"><a ng-href="{{collab.link}}" target="_blank">{{collab.name}}</a></span>
 </p>
+<p ng-show="project.customer">Customer: <a ng-href="{{project.customer.link}}" target="_blank">{{project.customer.name}}</a></p>
 <p ng-show="project.created">Created: {{project.created}}</p>
 <a ng-href="{{project.url}}" target="_blank">Visit &rarr;</a>

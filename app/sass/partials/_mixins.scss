@@ -21,3 +21,7 @@
   margin: $top auto $bottom auto;
 }
 
+@mixin textShadow {
+  text-shadow: 0 -1px 1px #FFFFFF, 0 1px 1px #666666;
+}
+

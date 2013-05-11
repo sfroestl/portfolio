@@ -19,11 +19,12 @@
     },
     { "title":"Wunschwälder",
       "teaser":"social contest web-app with facebook integration.",
-      "infoText":"At wunschwälder you can plant your wish tree, share it on Facebook and pour yours and other trees. The trees grow and you can win many prizes. This interactive website was created for a customer",
+      "infoText":"At wunschwälder you can plant your wish tree, share it on Facebook and pour yours and other trees. The trees grow and you can win many prizes. This interactive website was created for a customer.",
       "url":"http://www.wunschwaelder.de",
       "image":{"url":"images/content/wunsch.png", "orientation":"horizontal"},
       "created":"2012",
-      "collaborators":[{"name":"Daniel Breining", "link":"http://www.danielbreining.de"}]
+      "collaborators":[{"name":"Daniel Breining", "link":"http://www.danielbreining.de"}],
+      "customer":{"name":"Netzeffekt", "link":"http://www.netzeffekt.de/"}
     },
     { "title":"Nerdbande",
       "teaser":"dresdens regulars' table for designer and developer.",

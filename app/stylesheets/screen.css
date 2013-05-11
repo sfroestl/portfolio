@@ -88,15 +88,16 @@ body {
   color: #505050;
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
 }
 
 /************ Header ****************/
-/* line 33, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 header {
   padding: 6%;
   text-align: center;
 }
-/* line 37, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 header nav a {
   position: relative;
   border-bottom: 1px solid transparent;
@@ -113,12 +114,12 @@ header nav a {
   transition: all 0.25s ease;
   text-decoration: none;
 }
-/* line 49, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 header nav a:hover {
   color: #ded3c6;
   border-bottom: 1px solid #ded3c6;
 }
-/* line 54, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 header nav a#brand {
   background: transparent url("../images/logo.svg") no-repeat left top;
   border: none;
@@ -130,7 +131,7 @@ header nav a#brand {
 }
 
 /************ Content ****************/
-/* line 70, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: #505050;
@@ -141,7 +142,7 @@ a {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-/* line 75, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 a:hover {
   color: #ded3c6;
   border-bottom: 1px solid #ded3c6;
@@ -152,13 +153,16 @@ a:hover {
   transition: all 0.25s ease;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 b {
-  font-family: "Baskerville", serif;
-  font-weight: 600;
+  font-weight: 400;
+}
+/* line 87, ../sass/screen.scss */
+b.downcase {
+  text-transform: lowercase;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 #content {
   overflow: hidden;
   padding: 0 5%;
@@ -169,7 +173,7 @@ b {
   color: #505050;
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 h1 {
   font-family: "Baskerville", serif;
   color: #ded3c6;
@@ -180,12 +184,13 @@ h1 {
   text-shadow: 0 -1px 1px #FFFFFF, 0 1px 1px #666666;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 p.claim {
+  font-size: 1em;
   text-align: center;
   margin-bottom: 4em;
 }
-/* line 118, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 p.claim:after {
   background-color: #cdc5c0;
   content: "";
@@ -195,11 +200,16 @@ p.claim:after {
   margin: 0 auto;
   margin: 2em auto 0 auto;
 }
-/* line 125, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
+p.claimNoLine {
+  text-align: center;
+  margin-bottom: 4em;
+}
+/* line 134, ../sass/screen.scss */
 p.welcome {
   text-align: center;
 }
-/* line 130, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 p.teaser {
   font-family: "Baskerville", serif;
   font-size: 24px;
@@ -208,8 +218,14 @@ p.teaser {
   font-style: italic;
   margin-bottom: 35px;
 }
+/* line 147, ../sass/screen.scss */
+p.twitter {
+  font-size: 0.85em;
+  font-weight: 300;
+  margin-right: 1%;
+}
 
-/* line 141, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 section h2 {
   font-family: "Baskerville", serif;
   font-size: 38px;
@@ -217,37 +233,57 @@ section h2 {
   line-height: 1;
   text-align: center;
 }
-/* line 148, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 section h2 a {
   border: none;
 }
-/* line 153, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 section.contact-me h2 {
   margin-bottom: 1em;
 }
-/* line 157, ../sass/screen.scss */
-section.imprint, section.disclaimer, section.infoWidget {
+/* line 171, ../sass/screen.scss */
+section.imprint, section.disclaimer {
   font-size: .9em;
 }
-/* line 160, ../sass/screen.scss */
-section.infoWidget {
-  margin-bottom: 10em;
+
+/* line 176, ../sass/screen.scss */
+.skyline {
+  text-align: center;
+  width: auto;
+  height: 214px;
+  background: transparent url("../images/dresden-skyline.png") no-repeat left top;
+  margin: 0 0 2% 0;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
+.twitterBird {
+  float: left;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background: transparent url("../images/twitter-bird.jpg") no-repeat left top;
+  margin: 0 2% 0 7%;
+}
+
+/* line 193, ../sass/screen.scss */
 .contact-buttons {
   width: 252px;
-  height: 64px;
+  height: 174px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3em;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
+.welcome {
+  margin-bottom: 4%;
+}
+
+/* line 203, ../sass/screen.scss */
 article {
   margin-bottom: 4em;
 }
-/* line 173, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 article:after {
   background-color: #cdc5c0;
   content: "";
@@ -258,20 +294,20 @@ article:after {
   margin: 1em auto 0 auto;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 p.coworkers span:before {
   content: ", ";
 }
-/* line 184, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 p.coworkers span:first-child:before {
   content: "";
 }
-/* line 189, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 p.project-desc {
   padding-bottom: 1em;
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 img {
   display: block;
   margin: 0 auto;
@@ -279,12 +315,12 @@ img {
   margin-bottom: 35px;
   border: 0.4em solid white;
 }
-/* line 201, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 img.about {
   width: 320px;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -293,7 +329,7 @@ img.about {
   /* 2 */
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
@@ -302,13 +338,13 @@ img.about {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 221, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .clearfix {
   *zoom: 1;
 }
 
 /************ Footer ****************/
-/* line 231, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 footer {
   font-size: 0.8em;
   border-top: 0.6em solid gray;
@@ -322,35 +358,35 @@ footer {
 /* Large desktop */
 /* Portrait tablet to landscape and desktop */
 @media screen and (min-width: 768px) {
-  /* line 8, ../sass/partials/_media_queries.scss */
+  /* line 7, ../sass/partials/_media_queries.scss */
   img {
     width: 480px;
     height: auto;
   }
-  /* line 11, ../sass/partials/_media_queries.scss */
+  /* line 10, ../sass/partials/_media_queries.scss */
   img.vertical {
     height: 480px;
     width: auto;
   }
 
-  /* line 16, ../sass/partials/_media_queries.scss */
+  /* line 15, ../sass/partials/_media_queries.scss */
   .grid-left {
     float: left;
     width: 44%;
   }
 
-  /* line 20, ../sass/partials/_media_queries.scss */
+  /* line 19, ../sass/partials/_media_queries.scss */
   .grid-right {
     width: 54%;
     float: right;
   }
 
-  /* line 24, ../sass/partials/_media_queries.scss */
+  /* line 23, ../sass/partials/_media_queries.scss */
   #content {
     max-width: 800px;
   }
 
-  /* line 27, ../sass/partials/_media_queries.scss */
+  /* line 26, ../sass/partials/_media_queries.scss */
   footer {
     border: none;
     margin-top: 5%;
@@ -362,17 +398,17 @@ footer {
 }
 /* Landscape phones and down */
 @media screen and (max-width: 767px) {
-  /* line 40, ../sass/partials/_media_queries.scss */
+  /* line 39, ../sass/partials/_media_queries.scss */
   img {
     width: 260px;
   }
 
-  /* line 44, ../sass/partials/_media_queries.scss */
+  /* line 43, ../sass/partials/_media_queries.scss */
   footer a {
     color: white;
   }
 
-  /* line 48, ../sass/partials/_media_queries.scss */
+  /* line 47, ../sass/partials/_media_queries.scss */
   #content {
     min-height: 280px;
   }
