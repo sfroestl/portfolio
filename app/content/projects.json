@@ -19,7 +19,7 @@
     },
     { "title":"One Spark Mobile" ,
       "teaser":"phonegap app for one spark.",
-      "infoText":"This is the HTML5 JavaScript App for the collaboration plattform One Spark. It is basend on the ember-js framework as well as the ember-data persistence framework. Via PhoneGap the app was ported to 3 mobile plattforms, iOS, Android, WinPhone7. This webapp was developed during the practical course of 'Service and Cloud Computing' at Chair for Computer Networks at Dresden University of Technology",
+      "infoText":"This is the HTML5 JavaScript App for the collaboration plattform One Spark. It is basend on the ember-js framework as well as the ember-data persistence framework. Via PhoneGap the app was ported to 3 mobile plattforms, iOS, Android, WinPhone7. This webapp was developed during the practical course of 'Service and Cloud Computing' at Chair for Computer Networks at Dresden University of Technology.",
       "url":"http://www.onespark.de",
       "image":{"url":"images/content/os-mobile.jpg", "orientation":"vertical"},
       "created":"2012 & 2013",
